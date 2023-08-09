@@ -2,7 +2,7 @@
 
 Интеграция с Кассандрой работает по тому же принципу, что и [database](/features/database/#repository) и использует те же аннотации. Основное отличие заключается в конфигурации, пример ниже:
 
-```
+```hocon
 cassandra {
     auth {
         login = "user"
@@ -46,7 +46,7 @@ public interface AllGeneratedRepository extends CassandraQueryExecutorAccessor {
 
 ## Пример конфигурации
 
-```
+```hocon
 cassandra {
     # Авторизационные данные
     auth{

@@ -1,6 +1,6 @@
 # Soap
 
-## Подключение
+## Dependency
 
 ```groovy
 implemenation 'ru.tinkoff.kora:soap-client'

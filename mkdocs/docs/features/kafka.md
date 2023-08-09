@@ -1,6 +1,6 @@
 # Kafka
 
-## Подключение
+## Dependency
 
 ```groovy
 implementation 'ru.tinkoff.kora:kafka'
@@ -62,7 +62,7 @@ public record KafkaConsumerConfig(
 
 
 Пример конфигурации для подписки на топики:
-```
+```hocon
 kafka {
     first {
         pollTimeout: 3s
@@ -76,7 +76,7 @@ kafka {
 ```
 
 Пример конфигурации для подключения к топикам без группы. В этом примере консьюмер будет подключен ко всем партициям в топике и офсет сдвинут на 10 минут назад.
-```
+```hocon
 kafka {
     first {
         pollTimeout: 3s,

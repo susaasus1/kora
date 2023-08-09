@@ -198,7 +198,7 @@ public record HelloConfig(
 По умолчанию для поиска конфигурации будет использован следующий путь `httpClient.{lower case class name}`.
 В таком случае файл конфигурации будет выглядеть следующим образом:
 
-```
+```hocon
  httpClient.hello {
     "url" = "http://localhost:8080"
     "requestTimeout" = 10s

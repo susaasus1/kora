@@ -1,13 +1,23 @@
 # Scheduling
 
-## Подключение
+## Dependency
 
+**JDK**
+
+```groovy
+implementation 'ru.tinkoff.kora:scheduling-jdk'
+```
+
+**Quartz**
+
+```groovy
+implementation 'ru.tinkoff.kora:scheduling-quartz'
+```
 
 ## Использование jdk
 
 Для шедулинга поверх обычного `java.util.concurrent.ScheduledExecutorService`:
 
-- подключить зависимость: `ru.tinkoff.kora:scheduling-jdk`
 - подключить модуль `ru.tinkoff.kora.scheduling.jdk.SchedulingJdkModule`
 - отметить нужный метод одной из аннотаций:
     - `@ru.tinkoff.kora.scheduling.jdk.annotation.ScheduleAtFixedRate`
@@ -20,7 +30,6 @@
 ## Использование quartz
 Для шедулинга поверх quartz:
 
-- подключить зависимость: `ru.tinkoff.kora:scheduling-quartz`
 - подключить модуль `ru.tinkoff.kora.scheduling.quartz.QuartzModule`
 - отметить нужный метод одной из аннотаций:
     - `@ru.tinkoff.kora.scheduling.quartz.ScheduleWithCron` для использования крон выражения из аннотации или из конфигурации

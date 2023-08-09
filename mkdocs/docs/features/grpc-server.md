@@ -4,6 +4,8 @@ Kora предоставляет модуль для поднятия gRPC сер
 
 Для подключения gRPC сервера, необходимо добавить модуль `GrpcModule` из следующей зависимости
 
+### Dependency
+
 ```groovy
 implementation "ru.tinkoff.kora:grpc"
 ```
